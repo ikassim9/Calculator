@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8360c3
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: #ffd452;
+     padding: 20px;
+    text-align: right;
+
+}
+
+.grid-wrapper {
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 50px);
+    grid-gap: 5px;
+
+
+}
+
+.grid-wrapper button {
+    font-size: 2 rem;
+    padding: 0.5rem;
+    border: 1px solid green;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.equal {
+    background-color: #99f2c8
+}
+
+button:hover {
+    background-color: #c31432;
+}
