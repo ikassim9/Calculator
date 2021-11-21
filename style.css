@@ -10,13 +10,7 @@ body {
     background-color: #8360c3
 }
 
-.output {
-    grid-column: 1 / -1;
-    background-color: #ffd452;
-     padding: 20px;
-    text-align: right;
 
-}
 
 .grid-wrapper {
 
@@ -42,9 +36,23 @@ body {
 }
 
 .equal {
-    background-color: #99f2c8
+    background-color: #99f2c8;
+    grid-column: span 2;
 }
 
 button:hover {
     background-color: #c31432;
+}
+
+.output {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ffd452;
+    padding: 20px;
+    text-align: right;
+    word-break: break-all;
+    word-wrap: break-word;
+
 }
